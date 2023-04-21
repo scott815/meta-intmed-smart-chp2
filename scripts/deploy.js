@@ -12,7 +12,20 @@ async function main() {
   const assessment = await Assessment.deploy(initBalance);
   await assessment.deployed();
 
-  console.log(`A contract with balance of ${initBalance} eth deployed to ${assessment.address}`);
+  console.log(
+    `A contract with balance of ${initBalance} eth deployed to ${assessment.address}`
+  );
+  // Log the charity address with its balance
+  const charityAddress = assessment.charity();
+  const provider = new ethers.providers.JsonRpcProvider(
+    "http://localhost:8545"
+  ); // Use the URL of your local Hardhat node
+  const charityBalance = await provider.getBalance(charityAddress);
+  console.log(`Charity address: ${charityAddress.toString()}`);
+
+  console.log(
+    `Charity balance: ${ethers.utils.formatEther(charityBalance)} ETH`
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere
