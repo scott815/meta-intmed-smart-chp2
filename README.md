@@ -1,4 +1,6 @@
-# Starter Next/Hardhat Project
+# Eth Proof: Intermediate EVM Course 
+# Smart contract Management 
+# Project
 
 After cloning the github, you will want to do the following to get the code running on your computer.
 
@@ -10,3 +12,7 @@ After cloning the github, you will want to do the following to get the code runn
 
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
+
+Then connect your metamask wallet and you will be able to send 1 or 10 Eth to smart contract and also be able to withdraw.
+
+You will see running count of withdraws and deposits to the account.
