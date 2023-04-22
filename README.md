@@ -4,11 +4,11 @@
 
 After cloning the github, you will want to do the following to get the code running on your computer.
 
-1. Inside the project directory, in the terminal type: npm i
+1. Inside the project directory, in the terminal type: npm i  // this will install all the depencance needed 
 2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+3. In the second terminal type: npx hardhat node  // this will get a local hardhat node
+4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js // this will deploy smart contract to hardhat node from above
+5. Back in the first terminal, type npm run dev to launch the front-end.  // this will launch the app to interact with the smart contract running on your local node
 
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
